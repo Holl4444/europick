@@ -1,0 +1,40 @@
+*{
+    background-color: #ffc400;
+    color: rgb(5, 3, 117);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+.balls {
+    display: flex;
+    column-gap: 4vw;
+}
+
+.ball {
+    border: 2vw solid;
+    border-radius: 50%;
+}
+
+.stars {
+    display: flex;
+    column-gap: 2vw;
+}
+
+.star {
+    border: 1vw solid;
+    border-radius: 50%; 
+}
+
+button {
+    background-color: #ffc400;
+}
+
+button.chosen {
+    background-color: blueviolet;
+}
