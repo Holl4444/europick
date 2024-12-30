@@ -1,40 +1,169 @@
-*{
-    background-color: #ffc400;
-    color: rgb(5, 3, 117);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  background-color: whitesmoke;
+  color: rgb(5, 3, 117);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.game {
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.balls {
-    display: flex;
-    column-gap: 4vw;
+h1 {
+  margin: 4vh;
 }
 
-.ball {
-    border: 2vw solid;
-    border-radius: 50%;
+.msg {
+  margin: 3vh;
 }
 
-.stars {
-    display: flex;
-    column-gap: 2vw;
+.horizontal-line {
+  background-color: grey;
+  height: 1%;
+  margin-bottom: 1%;
 }
 
-.star {
-    border: 1vw solid;
-    border-radius: 50%; 
+.num-wrapper .horizontal-line {
+  width: 80%;
+}
+
+.star-wrapper .horizontal-line {
+  width: 60%;
+  min-height: 0;
+}
+
+.user-choice {
+  min-height: 0;
+  min-width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.star-wrapper,
+.num-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 0;
+  min-width: 0;
+}
+
+.star-wrapper {
+  min-width: 30%;
+}
+
+.num-wrapper {
+  min-width: 40%;
+}
+
+.num-text,
+.star-text {
+  display: flex;
+  justify-content: space-between;
+  min-height: 0;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.num-text {
+  width: 80%;
+}
+
+.star-text {
+  width: 60%;
+}
+
+#num-options,
+#star-options {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1%;
+  min-height: 0;
+}
+
+#num-options {
+  min-width: 50%;
+}
+
+#star-options {
+  min-width: 30%;
+}
+
+.num-row,
+.star-row {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 1%;
+  min-width: 0;
+  min-height: 0;
 }
 
 button {
-    background-color: #ffc400;
+  border: 1px solid navy;
+  border-radius: 50%;
+  font-weight: 800;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  min-height: 0;
+  min-width: 0;
 }
 
 button.chosen {
-    background-color: blueviolet;
+  background-color: blueviolet;
+}
+
+.num {
+  min-width: 17%;
+}
+
+.star-btn {
+  min-width: 40%;
+}
+
+#confirm {
+  border-radius: 15px;
+  margin-bottom: 5vh;
+  margin-top: 1%;
+  padding: 1%;
+  min-width: 9vw;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc400;
+  min-width: 100%;
+}
+
+.balls {
+  display: flex;
+  column-gap: 4vw;
+  justify-content: center;
+  background-color: inherit;
+  margin: 2vh;
+}
+
+.ball {
+  border: 0.5vw solid;
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.stars {
+  display: flex;
+  column-gap: 2vw;
+  justify-content: center;
+  background-color: inherit;
+  margin-bottom: 2vh;
+}
+
+.star {
+  border: 0.25vw solid;
+  border-radius: 50%;
+  background-color: inherit;
 }
